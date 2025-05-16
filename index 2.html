@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="mi_estilo.css">
+  <style>
+    /* Estilos básicos */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FFEDAB; /* Color suave de fondo */
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Contenedor de la marquesina */
+    #marquesina {
+      width: 100%;
+      background-color: #4CAF50; /* Verde oscuro */
+      color: #ffffff;
+      font-size: 32px;
+      text-align: center;
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Mensaje que se mueve */
+    #mensaje {
+      position: absolute;
+      white-space: nowrap;
+      animation: mover 10s linear infinite;
+      font-size: 36px;
+    }
+
+    /* Animación de desplazamiento */
+    @keyframes mover {
+      from {
+        left: 100%;
+      }
+
+      to {
+        left: -100%;
+      }
+    }
+
+    /* Menú de navegación */
+    nav {
+      background-color: #388E3C; /* Verde oscuro */
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 25px;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #9CE98C; /* Verde claro */
+    }
+
+    header {
+      background-color: #66BB6A; /* Verde claro */
+      color: white;
+      padding: 30px;
+    }
+
+    .contenido {
+      margin: 50px;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #388E3C; /* Verde oscuro */
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #388E3C;
+    }
+
+    h3 {
+      font-size: 24px;
+      color: #66BB6A; /* Verde claro */
+    }
+
+    img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Mi Portafolio</h1>
+    <img src="fotodeana.jpg" class="Photoone" alt="Foto de Ana">
+    <div class="contenedor"></div>
+  </header>
+
+  <!-- Contenedor de la Marquesina -->
+  <div id="marquesina">
+    <div id="mensaje">¡Bienvenido a mi Portafolio! 🌟</div>
+  </div>
+
+  <div class="contenido">
+    <h2>Nombre del Alumno: Ana Fernanda Urbina Gómez.</h2>
+    <h3>Campus: Lomas Verdes</h3>
+    <h3>Docentes: Prof. Patricia Hernández Carrillo</h3>
+  </div>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Sobre mí</a></li>
+      <li><a href="#">Proyectos</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+
+</body>
+
+</html>

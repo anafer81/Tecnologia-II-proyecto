@@ -1,0 +1,86 @@
+/* Estilo general del cuerpo de la página */
+
+body {
+
+font-family: Arial, sans-serif;
+
+padding: 30px;
+
+background-color: #305a3d; /* Fondo gris claro */
+
+}
+
+
+/* Contenedor de la galería (cuadrícula) */
+
+.galeria {
+
+display: grid;
+
+grid-template-columns: repeat(3, 1fr); /* Tres columnas, cada una toma un fracción del espacio */
+
+gap: 15px; /* Espacio entre las imágenes */
+
+margin-top: 30px;
+
+}
+
+
+/* Estilo para cada imagen */
+
+.galeria img {
+
+width: 100%; /* La imagen ocupa el 100% del espacio de la columna */
+
+height: auto; /* Mantiene la proporción de la imagen */
+
+border: 2px solid #947171; /* Borde gris claro */
+
+border-radius: 8px; /* Bordes redondeados */
+
+box-shadow: 0 4px 8px rgba(151, 145, 145, 0.1); /* Sombra sutil alrededor de la imagen */
+
+transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el agrandado y la sombra */
+
+}
+
+
+/* Efecto al pasar el mouse sobre la imagen */
+
+.galeria img:hover {
+
+transform: scale(1.05); /* Agrandar la imagen un 5% */
+
+box-shadow: 0 8px 16px rgba(129, 68, 68, 0.2); /* Sombra más intensa al hacer hover */
+
+}
+
+
+/* Hacer la galería responsiva: en pantallas pequeñas, la galería se adapta */
+
+@media (max-width: 768px) {
+
+.galeria {
+
+grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+
+}
+
+}
+
+
+@media (max-width: 580px) {
+
+.galeria {
+
+grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+
+}
+
+p {
+
+text-align: center;
+
+}
+
+}
